@@ -1,4 +1,4 @@
- SELECT    dtl.di::date                                                         AS "Day of install",
+SELECT    dtl.di::date                                                         AS "Day of install",
           dtl.dc                                                               AS "Activity Date",
           COALESCE (round(COALESCE(sum(cnt_conn), 0)/max(uc.users)*100, 2), 0) AS "% of active"
 FROM      (
