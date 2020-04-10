@@ -1,1 +1,1 @@
-# sql_examples
+Postgres sql query examples.
